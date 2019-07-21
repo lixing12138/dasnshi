@@ -1,0 +1,28 @@
+/* pages/email/email.wxss */
+.content{
+  margin-top:40px;
+}
+.account{
+  display: flex;
+  flex-direction: row;
+  padding-left:20px;
+  width: 90%; 
+  margin-top: 10px;
+}
+input{
+  border-bottom: 1px solid #dddddd;
+  width: 80%;
+  margin-left: 10px;
+}
+.email{
+  display: flex;
+  flex-direction: row;
+}
+.pwd{
+  display: flex;
+  flex-direction: row;
+}
+button{
+  margin-top: 20px;
+  width: 90%;
+}

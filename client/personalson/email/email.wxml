@@ -1,0 +1,15 @@
+<!--pages/email/email.wxml-->
+<view class='content'>
+<form bindsubmit='bindEmail'>
+<view class='account'>
+  <view class='email'>邮箱<input type='text' name='email' placeholder='请输入学邮' placeholder-style='font-size:15px'></input></view>
+</view>
+<modal hidden='{{hidden}}' title='绑定失败' bindcancel='cancel' bindconfirm='confirm'>
+     绑定失败，邮箱格式应为复旦邮箱
+</modal>
+<view class='account'>
+ <view class='pwd'>密码<input name='password' placeholder='请输入密码' placeholder-style='font-size:15px' type='password'></input></view>
+</view>
+<button form-type='submit' type='primary' size='default'>确定</button>
+</form>
+</view>

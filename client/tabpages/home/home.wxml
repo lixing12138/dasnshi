@@ -1,0 +1,47 @@
+<!--tabpages/home/home.wxml-->
+<view class='headTitle'>最热活动</view>
+<view class='imgShow' style="background-image: url('{{imgUrl}}')" bindtap='seeDetails'>
+    <view class='title'>打雪仗</view>
+    <view class='creator'>复旦大学晨曦网络工作室</view>
+    <view class='people'><view class='point'></view>参加人数{{people}}人</view>
+</view>
+<view class='imgCenter'>
+    <view class='imgShow' style="background-image: url('{{imgUrl}}')"  bindtap='seeDetails'>
+        <view class='title'>打雪仗</view>
+        <view class='creator'>复旦大学晨曦网络工作室</view>
+        <view class='people'><view class='point'></view>参加人数{{people}}人</view>
+    </view>
+    <view class='imgShow' style="background-image: url('{{imgUrl}}')" bindtap='seeDetails'>
+        <view class='title'>打雪仗</view>
+       <view class='creator'>复旦大学晨曦网络工作室</view>
+       <view class='people'><view class='point'></view>参加人数{{people}}人</view>
+    </view>
+</view>
+<view class='imgCenter' bindtap='seeDetails'>
+    <view class='imgShow' style="background-image: url('{{imgUrl}}')">
+       <view class='title'>打雪仗</view>
+       <view class='creator'>复旦大学晨曦网络工作室</view>
+       <view class='people'><view class='point'></view>参加人数{{people}}人</view>
+    </view>
+    <view class='imgShow' style="background-image: url('{{imgUrl}}')" bindtap='seeDetails'>
+        <view class='title'>打雪仗</view>
+        <view class='creator'>复旦大学晨曦网络工作室</view>
+        <view class='people'><view class='point'></view>参加人数{{people}}人</view>
+    </view>
+</view>
+<view class='headTitle'>最新活动</view>
+<view class='listShow'>
+     <block wx:for="{{activityObj}}" wx:key='unique'>
+        <view class='item' bindtap='seeDetails' data-id="1">
+           <image src='{{item.cover}}' class='left'></image>
+           <view class='right'>
+              <view id='title'>{{item.name}}</view>
+              <view class='type'>{{item.type}}</view>
+           </view>
+           <view class='enterView'><image src='../../img/enter.png' class='enter'></image></view>
+        </view>
+        <view class='hr'></view>
+     </block>
+</view>
+<view class='headTitle'>系统公告</view>
+<view class='notice'>danshidisfjuf</view>

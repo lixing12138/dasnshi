@@ -1,0 +1,41 @@
+<!--pages/personal/personal.wxml-->
+<view class='personalInfo' bindtap='toModifyInfo'>
+  <open-data type="userAvatarUrl" class='userinfo-avatar' mode="cover"></open-data>
+  <open-data type="userNickName" class="userinfo-nickname"></open-data> 
+</view>
+<view class='hr'></view>
+
+
+<view class='content'>
+   <view class='item' bindtap='toEmail'>
+     <image src='../../img/email.png' class='icon'></image>
+     <view class='itemName'><view>我的邮箱</view></view>
+     <view class='right'><text class='tip'>哈哈哈</text>></view>
+   </view>
+
+   <view class='item' bindtap='toActivity'>
+     <image src='../../img/activity.png' class='icon'></image>
+     <view class='itemName'><view>我的活动</view></view>
+     <view class='right'><view>></view></view>
+   </view>
+
+   <view class='item' bindtap='toAccountGroup'>
+     <image src='../../img/account.png' class='icon'></image>
+     <view class='itemName'><view>我的集体账户</view></view>
+     <view class='right'><view>></view></view>
+   </view>
+   <view class='hr'></view>
+
+   <view class='item' bindtap='toExperience' style='margin-top:10px;'>
+     <image src='../../img/tiyan.png' class='icon'></image>
+     <view class='itemName'><view>完整功能体验</view></view>
+     <view class='right'>></view>
+   </view>
+
+   <view class='item' bindtap='toFeedBack'>
+     <image src='../../img/feedback.png' class='icon'></image>
+     <view class='itemName'><view>用户反馈</view></view>
+     <view class='right'>></view>
+   </view>
+   <view class='hr'></view>
+</view>

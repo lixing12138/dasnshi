@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "tabpages/home/home",
+    "tabpages/browser/browser",
+    "tabpages/template/template",        
+    "tabpages/search/search",
+    "tabpages/personal/personal",
+    "personalson/email/email",
+    "personalson/activity/activity",
+    "personalson/accountgroup/accountgroup",
+    "personalson/experience/experience",
+    "personalson/feedback/feedback",
+    "pages/details/details",
+    "pages/createActivity/createActivity",
+    "personalson/modifyInfo/modifyInfo",
+    "pages/login/login",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c78d8",
+    "navigationBarTitleText": "旦事",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#D53E37",
+    "backgrounacolor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "tabpages/home/home",
+        "text": "广场",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      },
+      {
+        "pagePath": "tabpages/browser/browser",
+        "text": "活动",
+        "iconPath": "img/browse.png",
+        "selectedIconPath": "img/browse.png"
+      },
+      {
+        "pagePath": "tabpages/search/search",
+        "text": "搜索",
+        "iconPath": "img/search.png",
+        "selectedIconPath": "img/search1.png"
+      },
+      {
+        "pagePath": "tabpages/personal/personal",
+        "text": "我的",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my1.png"
+      }
+    ]
+  }
+}

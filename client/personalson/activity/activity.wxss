@@ -1,0 +1,21 @@
+/* pages/activity/activity.wxss */
+.title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.title view{
+  width: 33.3%;
+  text-align: center;
+}
+.select{
+  color: #2c78d8;
+  border-bottom: 1px solid #2c78d8;
+}
+swiper{
+  margin-top: 10px;
+}
+.contentSon{
+  width: 99%;
+}

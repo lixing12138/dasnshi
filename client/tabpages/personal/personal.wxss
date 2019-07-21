@@ -1,0 +1,64 @@
+/* tabpages/personal/personal.wxss */
+/* pages/personal/personal.wxss */
+page{
+  background-color: #e6e6e6;
+}
+.personalInfo{
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userinfo-avatar{
+  width:150rpx;
+  height:150rpx;
+  margin:20rpx 50rpx;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.userinfo-nickname{
+  font-weight: bold;
+  margin-left: 40px;
+  font-size: 50rpx;
+}
+.content{
+  margin-top:20px;
+}
+.item{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+}
+.icon{
+  width: 50px;
+  text-align: center;
+}
+.icon{
+  width:22px;
+  height:22px;
+  margin: auto;
+}
+.hr{
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.2;
+}
+.itemName{
+  width: 40%;
+  font-size: 18px;
+}
+.right{
+  text-align: right;
+  width: 40%;
+  padding-right: 5px;
+}
+.tip{
+  color: red;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+}

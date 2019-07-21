@@ -1,0 +1,41 @@
+<!--tabpages/search/search.wxml-->
+<!--pages/search/search.wxml-->
+<view  class='search'>
+    <view class='search_arr'>
+       <icon class='searchcion' size='20' type='search'></icon>
+       <input class='search_key' name='search_key' placeholder='请输入关键字' bindconfirm='search'></input>
+    </view>
+    <picker bindchange='bindPickerChange' value='{{index}}' range='{{order_way}}'><view>{{order[index]}}</view></picker>
+</view>
+
+<view class='content'>
+  <!--活动列表-->
+   <view class="free-WaterfallFlow">
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' 
+        wx:if="{{item.id%2!=''}}" bindtap='seeDetails' data-id='1'>
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <text class='title'>{{item.name}}</text>
+          <view class='down'>
+              <view class='hot'><image src='../../img/hot.png' style='height:50rpx;width:50rpx'></image>{{item.hot}}</view>
+          </view>
+          <view class='date'>{{item.data}}</view>
+          <view class='creator'>发起人</view>
+
+        </view>
+      </block>
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}'
+        wx:if="{{item.id%2==''}}" bindtap='seeDetails' data-id='1'>
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <text class='title'>{{item.name}}</text>
+           <view class='down'>
+              <view class='hot'><image src='../../img/hot.png' style='height:40rpx;width:40rpx'></image>{{item.hot}}</view>
+          </view>
+          <view class='date'>{{item.data}}</view>
+          <view class='creator'>发起人</view>
+        </view>
+      </block>
+    </view>
+</view>
+

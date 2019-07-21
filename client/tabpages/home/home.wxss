@@ -1,0 +1,117 @@
+/* tabpages/home/home.wxss */
+.headTitle{
+  padding:5px 10px;
+  color: #999999;
+  background-color: #ffffff;
+  font-size: 25px;
+}
+.imgShow{
+  width: 94%;
+  margin: 0 auto;
+  height: 180px;
+  border-radius: 6px;
+  position: relative;
+}
+.title{
+  position: absolute;
+  bottom: 32px;
+  left: 10px;
+  font-size: 25rpx;
+  color: white;
+}
+.creator{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 22rpx;
+  color: white;
+}
+
+.people{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 21rpx;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 5px;
+  padding:1px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.point{
+  width:15rpx;
+  height:15rpx;
+  background-color: #58d3f7;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  margin-right: 4px;
+}
+.imgCenter{
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  margin: 10px auto;
+}
+.imgCenter .imgShow{
+  width: 48%;
+}
+.listShow{
+  border: 1px solid #eeeeee;
+  width: 94%;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 6rpx;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding:5px 10px;
+}
+.left{
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+  border-radius: 5px;
+}
+.right{
+  margin:5px 8px;
+}
+.enterView{
+  margin-right: 0px;
+}
+.enter{
+  width: 20px;
+  height:20px;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+#title{
+  font-weight: bold;
+  font-size: 15px;
+}
+.type{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  margin-top: 10px; 
+  color: #cccccc;
+}
+.hr{
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+.notice{
+  background-color: #f0ebd8;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 30px;
+}

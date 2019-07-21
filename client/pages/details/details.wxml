@@ -1,0 +1,14 @@
+<!--pages/details/details.wxml-->
+<view class='content'>
+    <view class='name'>{{name}}</view>
+    <view class='cover'><image src='{{cover}}'></image></view>
+    <view class='timeOfActivity fontstyle'>活动时间：{{timeOfActivity}}</view>
+    <view class='timeOfBaoming fontstyle'>报名时间：{{timeOfBaoming}}</view>
+    <view class='place fontstyle'>活动地点：{{place}}</view>
+    <view class='creator fontstyle'>发起者：{{creator}}</view>
+    <view class='numberOfPeople fontstyle'>当前报名人数：{{numberOfPeople}}</view>
+    <view class='limitOfPeople fontstyle'>上限人数：{{limitOfPeople}}</view>
+    <view class='description fontstyle'>简介：{{description}}</view>
+    <view bindtap='changeBaoming'><image class='baoming' src='{{baoming}}'></image></view>
+    <view bindtap='changeCollect'><image class='collect' src='{{collect}}'></image></view>
+</view>

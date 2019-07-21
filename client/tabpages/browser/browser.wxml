@@ -1,0 +1,59 @@
+<!--tabpages/browser/browser.wxml-->
+<view class='head'>
+  <scroll-view scroll-x="true">
+      <view class='scrollArea'>
+        <view><view class="{{flag==0?'select':'normal'}}" id='0' bindtap='switchNav'>全部</view></view>
+        <view><view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>公益</view></view>
+        <view><view class="{{flag==2?'select':'normal'}}" id='2' bindtap='switchNav'>招聘</view></view>
+        <view><view class="{{flag==3?'select':'normal'}}" id='3' bindtap='switchNav'>运动</view></view>
+        <view><view class="{{flag==4?'select':'normal'}}" id='4' bindtap='switchNav'>讲座</view></view>
+        <view><view class="{{flag==5?'select':'normal'}}" id='5' bindtap='switchNav'>演出</view></view>
+        <view><view class="{{flag==6?'select':'normal'}}" id='6' bindtap='switchNav'>赛事</view></view>
+        <view><view class="{{flag==7?'select':'normal'}}" id='7' bindtap='switchNav'>其它</view></view>
+      </view>
+  </scroll-view>
+</view>
+<view class='hr'></view>
+<swiper current='{{currentTab}}' style='height: {{winHeight}}px' bindchange='bindchange'>
+   <swiper-item>
+       <import src='../template/template'/>
+       <template is='item' data="{{obj:obje}}"/>
+   </swiper-item>
+
+   <swiper-item>
+      <import src='../template/template'/>
+        <template is='item' data="{{obj}}"/>
+   </swiper-item>
+
+    <swiper-item>
+       <import src='../template/template'/>
+       <template is='item' data="{{obj:obj3}}"/>
+   </swiper-item>
+
+   <swiper-item>
+      <import src='../template/template'/>
+        <template is='item' data="{{obj:obj4}}"/>
+   </swiper-item>
+
+    <swiper-item>
+       <import src='../template/template'/>
+       <template is='item' data="{{obj5}}"/>
+   </swiper-item>
+
+   <swiper-item>
+      <import src='../template/template'/>
+        <template is='item' data="{{obj4}}"/>
+   </swiper-item>
+
+    <swiper-item>
+       <import src='../template/template'/>
+       <template is='item' data="{{obj3}}"/>
+   </swiper-item>
+
+   <swiper-item>
+      <import src='../template/template'/>
+      <template is='item' data="{{obj2}}"/>
+   </swiper-item>
+
+</swiper>
+<view bindtap='createActivity'><image src='../../img/create.png' class='createAcitvity'></image></view>

@@ -1,0 +1,67 @@
+<!--pages/createActivity/createActivity.wxml-->
+<form bindsubmit='formSubmit'>
+<view class='pic'>
+      <view>封面图：</view>
+      <view bindtap='uploadPic'>
+         <image src='../../img/addpic.png' class='addpic'></image>
+         <image src='{{coverPath}}' class='cover'></image>
+      </view>
+</view>
+<view class='date'>
+  <view>设置活动类型：
+     <picker bindchange='selectActivityType' value='{{index}}' range='{{array}}'>
+       <view class='activityType'>{{array[index]}}</view>
+     </picker>
+  </view>
+  <view>填写活动地点：<input type='text' placeholder='请填写活动地点' name='place' style='border:1px solid #cccccc'></input></view>
+</view>
+
+<view class='date'>
+   <view>设置活动报名的起始日期：
+      <picker mode='date' value='{{date_start_baoming}}' start='2018-01-01' end='2018-12-31' bindchange='bindStartBaoming'>
+        <view class='picker'>{{date_start_baoming}}</view>
+      </picker>
+   </view>
+   <view>设置活动报名的终止日期：
+      <picker mode='date' value='{{date_end_baoming}}' start='2018-01-01' end='2018-12-31' bindchange='bindEndBaoming'>
+        <view class='picker'>{{date_end_baoming}}</view>
+      </picker>
+   </view>
+</view>
+<view class='date'>
+  <view>设置活动举办的起始时间：
+    <view class='paiban'>
+      <picker mode='date' value='{{date_start_juban}}' start='2018-01-01' end='2018-12-31' bindchange='bindStartJuban'>
+        <view class='picker'>{{date_start_juban}}</view>
+      </picker>
+      <picker mode='time' value='{{time_start_juban}}' start='00:00' end='23:59' bindchange='bindStartTime'>
+        <view class='time'>{{time_start_juban}}</view>
+      </picker>
+    </view>
+  </view>
+  <view>设置活动举办的终止时间：
+    <view class='paiban'>
+       <picker mode='date' value='{{date_end_juban}}' start='2018-01-01' end='2018-12-31' bindchange='bindEndJuban'>
+         <view class='picker'>{{date_end_juban}}</view>
+       </picker>
+       <picker mode='time' value='{{date_end_juban}}' start='00:00' end='23:59' bindchange='bindEndTime'>
+         <view class='time'>{{time_end_juban}}</view>
+       </picker>
+      </view>
+  </view>
+</view>
+<view class='date'>
+    <view>活动标题：<input type='text' name='titleOfActivity' placeholder='活动标题'placeholder-style='font-size:16px' style='border:1px solid #cccccc'></input></view>
+    <view>活动简介：<textarea name='descriptionOfActivity' placeholder='活动简介'></textarea></view>
+</view>
+<view class='date'>
+    <view>活动上限人数：
+       <slider name="numOfPeople" show-value='true' max='100' class='{{showNum}}'></slider>
+      <view><switch name='isInfinite' type='switch' checked='true' bindchange='setNum'/>（无上限）</view> 
+    </view>
+    <view>活动发起者：</view>
+    <view>活动可见性：</view>
+</view>
+ 
+<button form-type='submit' type='primary'>创建活动</button>
+</form>

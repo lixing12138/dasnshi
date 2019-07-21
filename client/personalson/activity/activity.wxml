@@ -1,0 +1,19 @@
+<!--pages/activity/activity.wxml-->
+<view class='content'>
+  <view class='title'>
+     <view class="{{currentTab==0?'select':'default'}}" data-current='0' bindtap='switchNav'>我收藏的</view>     
+     <view class="{{currentTab==1?'select':'default'}}" data-current='1' bindtap='switchNav'>我创建的</view>
+     <view class="{{currentTab==2?'select':'default'}}" data-current='2' bindtap='switchNav'>我参与的</view>
+  </view>
+  <swiper current='{{currentTab}}' style='height: {{winHeight}}px' bindchange='bindchange' circular='true'>
+    <swiper-item>
+       <view class='contentSon'>1</view>
+    </swiper-item>
+    <swiper-item>
+       <view class='contentSon'>2</view>
+    </swiper-item>
+    <swiper-item>
+       <view class='contentSon'>3</view>
+    </swiper-item>
+  </swiper>
+</view>

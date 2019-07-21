@@ -1,0 +1,49 @@
+/* pages/createActivity/createActivity.wxss */
+page{
+  background-color: #e6e6e6;
+  font-family: "宋体";
+}
+.pic{
+  background-color: white;
+  height: 100px;
+}
+.addpic{
+  width:80rpx;
+  height:80rpx;
+  margin-left:60px;
+}
+.cover{
+   width:120rpx;
+   height:120rpx;
+   margin-left:60px;
+}
+.picker{
+  margin-left: 10px;
+}
+.date{
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px ;
+}
+.paiban{
+  display: flex;
+  flex-direction: row;
+}
+.time{
+  margin-left: 30px;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+.date view textarea{
+  border:  1px solid #cccccc;
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+button{
+  margin: 10px 0px;
+}

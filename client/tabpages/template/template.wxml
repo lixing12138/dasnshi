@@ -1,0 +1,12 @@
+<!--tabpages/template/template.wxml-->
+<template name='item'>
+<view class='imgShow'>
+  <block>
+     <view class="imgShow-single" wx:for="{{obj}}" wx:key='{{item.src}}' bindtap='seeDetails' data-id='1'>
+       <view class='head'><image src='{{item.avator}}' class='avator'></image><view class='title'>{{item.title}}</view></view>
+       <image src="{{item.src}}" class='cover' mode='widthFix'></image>
+       <view class='description'>{{item.description}}</view>
+     </view>
+  </block>
+</view>
+</template>

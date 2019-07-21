@@ -1,0 +1,30 @@
+/* pages/details/details.wxss */
+.content{
+  padding: 5px;
+}
+.baoming{
+   position: fixed;
+   width:100rpx;
+   height:100rpx;
+   bottom: 100rpx;
+   right: 20rpx;
+}
+.collect{
+   position: fixed;
+   width:100rpx;
+   height:100rpx;
+   bottom: 100rpx;
+   left: 20rpx;
+}
+.fontstyle{
+  font-size: 35rpx;
+}
+.name{
+  text-align: center;
+  font-weight: bold;
+}
+.cover{
+  /* text-align: center; */
+  width: 80%;
+  margin-left: 10%;
+}

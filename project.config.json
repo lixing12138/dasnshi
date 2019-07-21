@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxe87f953079f78b45",
+	"projectname": "danshi2.0",
+	"condition": {}
+}

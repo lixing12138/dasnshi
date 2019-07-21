@@ -1,0 +1,93 @@
+/* tabpages/browser/browser.wxss */
+::-webkit-scrollbar{
+    width: 0;
+    additive-symbols: 0;
+    color: transparent;
+}
+.scrollArea{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 100%;
+}
+.select{
+  width: 60px;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 10px; 
+  font-size: 14px;
+  color:#2c78d8;
+  font-weight: bold;
+  background-color: #e2ecf8;
+}
+.normal{
+  width: 60px;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 10px; 
+  font-size: 14px;
+  background-color: #e2ecf8;
+
+}
+.createAcitvity{
+   position: fixed;
+   width:80rpx;
+   height:80rpx;
+   bottom: 100rpx;
+   right: 20rpx;
+}
+.hr{
+  background-color: #cccccc;
+  width: 100%;
+  height: 1px;
+}
+
+.imgShow{
+  width:96%;
+  column-count:2;
+  column-gap: 10px;
+  margin-left: 2%;
+  margin-top: 5px;
+}
+.imgShow-single{
+  display: inline-block;
+  width:100%;
+  margin-bottom:2%;
+  border:1px solid #ccc;
+  padding-top:5%;
+  text-align: center;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.cover{
+  width:100%;
+  margin-top: 5px;
+}
+.avator{
+  width:50rpx;
+  height:50rpx;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  margin: 5px;
+}
+.title{
+    font-size: 32rpx;
+    margin: auto 10px;
+}
+.description{
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  padding: 2px;
+}
+
+
+
